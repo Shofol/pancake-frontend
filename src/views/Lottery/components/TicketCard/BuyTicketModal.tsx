@@ -1,7 +1,7 @@
 import BigNumber from 'bignumber.js'
 import React, { useCallback, useMemo, useState } from 'react'
 import styled from 'styled-components'
-import { Button, Modal } from '@pancakeswap/uikit'
+import { Button, Modal } from '@shofol/panuikit'
 import { getBalanceNumber, getFullDisplayBalance } from 'utils/formatBalance'
 import { ModalActions } from 'components/Modal'
 import { useMultiBuyLottery, useMaxNumber } from 'views/Lottery/hooks/useBuyLottery'

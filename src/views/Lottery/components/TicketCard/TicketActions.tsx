@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Button, useModal } from '@pancakeswap/uikit'
+import { Button, useModal } from '@shofol/panuikit'
 import { useTranslation } from 'contexts/Localization'
 import useGetLotteryHasDrawn from 'views/Lottery/hooks/useGetLotteryHasDrawn'
 import useTickets from 'views/Lottery/hooks/useTickets'

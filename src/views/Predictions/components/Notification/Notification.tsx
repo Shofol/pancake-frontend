@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Card, CardBody, Heading } from '@pancakeswap/uikit'
+import { Card, CardBody, Heading } from '@shofol/panuikit'
 
 interface NotificationProps {
   title: string
@@ -29,7 +29,7 @@ const CardWrapper = styled.div`
 
 const BunnyDecoration = styled.div`
   position: absolute;
-  top: -130px;
+  top: -64px;
   left: 0px;
   text-align: center;
   width: 100%;
@@ -41,7 +41,7 @@ const Notification: React.FC<NotificationProps> = ({ title, children }) => {
     <Wrapper>
       <CardWrapper>
         <BunnyDecoration>
-          <img src="/images/decorations/hiccup-bunny.png" alt="bunny decoration" height="121px" width="130px" />
+          <img src="/images/decorations/sloth.png" alt="bunny decoration" height="121px" width="130px" />
         </BunnyDecoration>
         <Card>
           <CardBody>

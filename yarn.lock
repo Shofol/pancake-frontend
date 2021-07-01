@@ -2046,19 +2046,6 @@
     eslint-plugin-react "^7.21.5"
     eslint-plugin-react-hooks "^4.0.0"
 
-"@pancakeswap/uikit@^0.39.4":
-  version "0.39.4"
-  resolved "https://registry.yarnpkg.com/@pancakeswap/uikit/-/uikit-0.39.4.tgz#bcb0812a5804ba647a0fc0b1b46b355038534849"
-  integrity sha512-fuH9SLQTB3CjlUp3m4lmVd4xBmhzQvqDBCnTsWGGUz0gjUC9d00LbWgJP4K7nMKfOukIunOxsUfnf5/gMNOmVw==
-  dependencies:
-    "@popperjs/core" "^2.9.2"
-    "@types/lodash" "^4.14.168"
-    "@types/styled-system" "^5.1.10"
-    lodash "^4.17.20"
-    react-popper "^2.2.5"
-    react-transition-group "^4.4.1"
-    styled-system "^5.1.5"
-
 "@pedrouid/environment@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@pedrouid/environment/-/environment-1.0.1.tgz#858f0f8a057340e0b250398b75ead77d6f4342ec"
@@ -2137,6 +2124,19 @@
     "@types/estree" "0.0.39"
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
+
+"@shofol/panuikit@^0.40.8":
+  version "0.40.8"
+  resolved "https://registry.yarnpkg.com/@shofol/panuikit/-/panuikit-0.40.8.tgz#fa3fc8ec81c5a6ae6dca53ee7d27953e1010e5d0"
+  integrity sha512-r8ibOoBdlQqwNqUYFHk80CUW9Nb3DLX7Oql6rTKyVblqOhBqRtWwbNNYm0vWtuOBH6MrQOWLskXghltjLzBp1w==
+  dependencies:
+    "@popperjs/core" "^2.9.2"
+    "@types/lodash" "^4.14.168"
+    "@types/styled-system" "^5.1.10"
+    lodash "^4.17.20"
+    react-popper "^2.2.5"
+    react-transition-group "^4.4.1"
+    styled-system "^5.1.5"
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"

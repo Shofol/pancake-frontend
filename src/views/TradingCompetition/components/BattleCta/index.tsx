@@ -10,7 +10,7 @@ import {
   CheckmarkCircleIcon,
   useWalletModal,
   useModal,
-} from '@pancakeswap/uikit'
+} from '@shofol/panuikit'
 import useAuth from 'hooks/useAuth'
 import { useTranslation } from 'contexts/Localization'
 import { FINISHED, OVER } from 'config/constants/trading-competition/easterPhases'
@@ -77,10 +77,10 @@ const BattleCta: React.FC<CompetitionProps> = ({
 
   const isButtonDisabled = Boolean(
     isLoading ||
-      currentPhase.state === OVER ||
-      registeredAndNotStarted ||
-      finishedAndPrizesClaimed ||
-      finishedAndNothingToClaim,
+    currentPhase.state === OVER ||
+    registeredAndNotStarted ||
+    finishedAndPrizesClaimed ||
+    finishedAndNothingToClaim,
   )
 
   const getHeadingText = () => {

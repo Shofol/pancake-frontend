@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Card, CardBody, TicketRound, Text, Heading } from '@pancakeswap/uikit'
+import { Card, CardBody, TicketRound, Text, Heading } from '@shofol/panuikit'
 import { useTranslation } from 'contexts/Localization'
 import useGetLotteryHasDrawn from 'views/Lottery/hooks/useGetLotteryHasDrawn'
 import useTickets from 'views/Lottery/hooks/useTickets'
@@ -12,7 +12,7 @@ interface CardProps {
   isSecondCard?: boolean
 }
 
-const StyledCard = styled(Card)<CardProps>`
+const StyledCard = styled(Card) <CardProps>`
   ${(props) =>
     props.isSecondCard
       ? `  

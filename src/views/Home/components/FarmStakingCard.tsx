@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react'
 import styled from 'styled-components'
-import { Heading, Card, CardBody, Button } from '@pancakeswap/uikit'
+import { Heading, Card, CardBody, Button } from '@shofol/panuikit'
 import { harvestFarm } from 'utils/calls'
 import { useWeb3React } from '@web3-react/core'
 import { useTranslation } from 'contexts/Localization'
@@ -84,8 +84,8 @@ const FarmedStakingCard = () => {
               {pendingTx
                 ? t('Collecting CAKE')
                 : t('Harvest all (%count%)', {
-                    count: balancesWithValue.length,
-                  })}
+                  count: balancesWithValue.length,
+                })}
             </Button>
           ) : (
             <UnlockButton width="100%" />

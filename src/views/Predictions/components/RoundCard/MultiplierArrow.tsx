@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { CSSProperties } from 'styled-components'
-import { Box, Flex, Text } from '@pancakeswap/uikit'
+import { Box, Flex, Text } from '@shofol/panuikit'
 import { useTranslation } from 'contexts/Localization'
 import { BetPosition } from 'state/types'
 import { RoundMultiplierDownArrow, RoundMultiplierUpArrow } from '../../RoundMultiplierArrows'
@@ -40,17 +40,17 @@ const EnteredTagWrapper = styled.div`
 
 const getTextColor =
   (fallback = 'textSubtle') =>
-  (isActive: boolean, isDisabled: boolean) => {
-    if (isDisabled) {
-      return 'textDisabled'
-    }
+    (isActive: boolean, isDisabled: boolean) => {
+      if (isDisabled) {
+        return 'textDisabled'
+      }
 
-    if (isActive) {
-      return 'white'
-    }
+      if (isActive) {
+        return 'white'
+      }
 
-    return fallback
-  }
+      return fallback
+    }
 
 const MultiplierArrow: React.FC<MultiplierArrowProps> = ({
   betAmount,

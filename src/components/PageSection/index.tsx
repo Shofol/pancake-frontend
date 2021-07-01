@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Flex, FlexProps } from '@pancakeswap/uikit'
+import { Flex, FlexProps } from '@shofol/panuikit'
 import Container from 'components/layout/Container'
 import CurvedDivider from './CurvedDivider'
 
@@ -16,7 +16,7 @@ interface BackgroundColorProps extends FlexProps {
   background?: string
 }
 
-const BackgroundColor = styled(Flex)<BackgroundColorProps>`
+const BackgroundColor = styled(Flex) <BackgroundColorProps>`
   position: relative;
   flex-direction: column;
   z-index: ${({ index }) => index - 1};

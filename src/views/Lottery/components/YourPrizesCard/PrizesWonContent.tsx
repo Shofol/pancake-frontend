@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from 'react'
 import styled from 'styled-components'
-import { Button, Heading, PresentWonIcon, useModal } from '@pancakeswap/uikit'
+import { Button, Heading, PresentWonIcon, useModal } from '@shofol/panuikit'
 import { useTranslation } from 'contexts/Localization'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { useMultiClaimLottery } from 'views/Lottery/hooks/useBuyLottery'

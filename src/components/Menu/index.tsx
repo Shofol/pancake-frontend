@@ -1,5 +1,5 @@
 import React from 'react'
-import { Menu as UikitMenu } from '@pancakeswap/uikit'
+import { Menu as UikitMenu } from '@shofol/panuikit'
 import { useWeb3React } from '@web3-react/core'
 import { languageList } from 'config/localization/languages'
 import { useTranslation } from 'contexts/Localization'
@@ -20,6 +20,7 @@ const Menu = (props) => {
     <UikitMenu
       account={account}
       login={login}
+      logo='/images/bunny-santa.svg'
       logout={logout}
       isDark={isDark}
       toggleTheme={toggleTheme}

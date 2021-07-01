@@ -1,6 +1,6 @@
 import React, { lazy } from 'react'
 import { Router, Redirect, Route, Switch } from 'react-router-dom'
-import { ResetCSS } from '@pancakeswap/uikit'
+import { ResetCSS } from '@shofol/panuikit'
 import BigNumber from 'bignumber.js'
 import useEagerConnect from 'hooks/useEagerConnect'
 import { usePollCoreFarmData, useFetchProfile, usePollBlockNumber } from 'state/hooks'
@@ -51,9 +51,9 @@ const App: React.FC = () => {
         <SuspenseWithChunkError fallback={<PageLoader />}>
           <Switch>
             <Route path="/" exact>
-              <Home />
+              <Redirect to="/prediction" />
             </Route>
-            <Route path="/farms">
+            {/* <Route path="/farms">
               <Farms />
             </Route>
             <Route path="/pools">
@@ -79,11 +79,11 @@ const App: React.FC = () => {
             </Route>
             <Route path="/competition">
               <TradingCompetition />
-            </Route>
+            </Route> */}
             <Route path="/prediction">
               <Predictions />
             </Route>
-            <Route exact path="/voting">
+            {/* <Route exact path="/voting">
               <Voting />
             </Route>
             <Route exact path="/voting/proposal/create">
@@ -91,9 +91,9 @@ const App: React.FC = () => {
             </Route>
             <Route path="/voting/proposal/:id">
               <Proposal />
-            </Route>
+            </Route> */}
             {/* Redirect */}
-            <Route path="/staking">
+            {/* <Route path="/staking">
               <Redirect to="/pools" />
             </Route>
             <Route path="/syrup">
@@ -101,7 +101,7 @@ const App: React.FC = () => {
             </Route>
             <Route path="/nft">
               <Redirect to="/collectibles" />
-            </Route>
+            </Route> */}
 
             {/* 404 */}
             <Route component={NotFound} />

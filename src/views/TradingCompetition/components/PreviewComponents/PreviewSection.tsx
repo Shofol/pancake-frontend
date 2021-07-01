@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Flex } from '@pancakeswap/uikit'
+import { Flex } from '@shofol/panuikit'
 import { SectionProps } from '../../types'
 
-const BackgroundColorWrapper = styled(Flex)<SectionProps>`
+const BackgroundColorWrapper = styled(Flex) <SectionProps>`
   min-height: calc(100vh - 64px);
   position: relative;
   align-items: center;
